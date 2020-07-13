@@ -1,0 +1,229 @@
+﻿#banner {
+    background-image: url('../images/background_banner.png');
+    
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 540px;
+    padding-top: 2%;
+    
+}
+#banner h3, #banner h4 {
+    margin-top: 2%;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+#banner img {
+    height: 250px;
+    width: 240px;
+    border-radius: 50%;
+    margin: auto;
+    display:block;
+}
+.header {
+    border: 5px solid black;
+}
+
+/* flip card*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* End flip card*/
+
+/* Timeline */
+
+.main-timeline {
+    padding-top: 170px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-timeline:before {
+    content: "";
+    width: 7px;
+    height: 100px;
+    background: #084772; /* dark blue color pole*/
+    margin: 0 auto;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+}
+
+.main-timeline .timeline {
+    width: 50%;
+        float: left;
+        padding: 20px 60px;
+        border-top: 7px solid #084772; /* dark blue color */
+        border-right: 7px solid #084772;
+        border-radius: 0 30px 0 0;
+        position: relative;
+        right: -3.5px;
+}
+
+.main-timeline .icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #e84c47; /*reddish color*/
+    border: 1px solid white;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    box-shadow: 0 0 0 2px #e84c47; /*reddish color*/
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.main-timeline .timeline-content {
+
+    display: block;
+    padding: 30px 10px  10px;
+    border-radius: 20px;
+    background: #4bd9bf; /* teal color */
+    color: white;
+    position: relative;
+}
+
+.main-timeline .timeline-content:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.main-timeline .timeline-content:before,
+.main-timeline .timeline-content:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 50px;
+    border-radius: 10px;
+    background: #e84c47; /* reddish color */
+    border: 1px solid white;
+    position: absolute;
+    top: -35px;
+    left: 50px;
+}
+
+.main-timeline .timeline-content:after {
+    left: auto;
+    right: 50px;
+}
+
+.main-timeline .title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.main-timeline .description {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+
+.main-timeline .timeline:nth-child(2n) {
+    border-right: none;
+    border-left: 7px solid #084772; /* dark blue color */
+    border-radius: 30px 0 0 0;
+    right: auto;
+    left: -3.5px;
+}
+
+.main-timeline .timeline:nth-child(2n) .icon {
+    left: auto;
+    right: 0;
+}
+
+.main-timeline .timeline:nth-child(2) {
+    margin-top: 0px; /*130*/
+}
+    .main-timeline .timeline:nth-child(odd) {
+        margin: -130px 0 30px 0;
+    }
+    .main-timeline .timeline:nth-child(even) {
+        margin-bottom: 80px;
+    }
+
+.main-timeline .timeline:first-child,
+
+.main-timeline .timeline:last-child:nth-child(even) {
+    margin-top: 0 0 30px 0;
+}
+
+.main-timeline .timeline:nth-child(2n).timeline-content,
+.main-timeline .timeline:nth-child(2n).timeline-content:before,
+.main-timeline .timeline:nth-child(2n).timeline-content:after,
+.main-timeline .timeline:nth-child(2n).icon {
+    background: #4bd9bf; /* teal color */
+}
+
+.main-timeline .timeline:nth-child(2n) .icon {
+    box-shadow: 0 0 0 2px #e84c47; /* reddish color */
+}
+
+.main-timeline .timeline:nth-child(3n) .timeline-content,
+.main-timeline .timeline:nth-child(3n) .timeline-content:before,
+.main-timeline .timeline:nth-child(3n) .timeline-content:after,
+.main-timeline .timeline:nth-child(3n) .icon {
+    background: #ff9e09; /* orange color */
+}
+
+.main-timeline .timeline:nth-child(3n) .icon {
+    box-shadow: 0 0 0 2px #ff9e09; /* orange color */
+}
+
+.main-timeline .timeline:nth-child(4n) .timeline-content,
+.main-timeline .timeline:nth-child(4n) .timeline-content:before,
+.main-timeline .timeline:nth-child(4n) .timeline-content:after,
+.main-timeline .timeline:nth-child(4n) .icon {
+    background: #3ebae7; /* sky blue color */
+}
+
+.main-timeline .timeline:nth-child(4n) .icon {
+    box-shadow: 0 0 0 2px #3ebae7; /* sky blue color */
+}
