@@ -67,7 +67,7 @@
     clear: both;
 }
 #Skills {
-    border: 2px solid black;
+    
 }
 #Skills h2, #Skills h3 {
     font-family: 'Lucida Console';
@@ -129,6 +129,9 @@
 /* End flip card*/
 
 /* Timeline */
+#timeline {
+    background-color: #F4F3F3;
+}
 #timeline h3, #timeline h2 {
     font-family: 'Lucida Console';
 }
@@ -142,7 +145,7 @@
     content: "";
     width: 7px;
     height: 100px;
-    background: #084772; /* dark blue color pole*/
+    background: #41212D; /* dark color pole*/
     margin: 0 auto;
     position: absolute;
     top: 80px;
@@ -150,40 +153,40 @@
     right: 0;
 }
 
-.main-timeline .timeline {
-    width: 50%;
+    .main-timeline .timeline {
+        width: 50%;
         float: left;
         padding: 20px 60px;
-        border-top: 7px solid #084772; /* dark blue color */
-        border-right: 7px solid #084772;
+        border-top: 7px solid #41212D; /* dark color */
+        border-right: 7px solid #41212D;
         border-radius: 0 30px 0 0;
         position: relative;
         right: -3.5px;
-}
+    }
 
-.main-timeline .icon {
-    display: block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    background: #e84c47; /*reddish color*/
-    border: 1px solid white;
-    text-align: center;
-    font-size: 25px;
-    color: white;
-    box-shadow: 0 0 0 2px #e84c47; /*reddish color*/
-    position: absolute;
-    top: -30px;
-    left: 0;
-}
+    .main-timeline .icon {
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        background: #F09248; /*reddish color*/
+        border: 1px solid white;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        box-shadow: 0 0 0 2px #BE5142; /*reddish color*/
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
 
 .main-timeline .timeline-content {
 
     display: block;
     padding: 30px 10px  10px;
     border-radius: 20px;
-    background: #4bd9bf; /* teal color */
+    background: #BE5142; /* body color */
     color: white;
     position: relative;
 }
@@ -200,7 +203,7 @@
     width: 10px;
     height: 50px;
     border-radius: 10px;
-    background: #e84c47; /* reddish color */
+    background: #BE5142; /* reddish color */
     border: 1px solid white;
     position: absolute;
     top: -35px;
@@ -225,7 +228,7 @@
 
 .main-timeline .timeline:nth-child(2n) {
     border-right: none;
-    border-left: 7px solid #084772; /* dark blue color */
+    border-left: 7px solid #41212D; /* dark blue color */
     border-radius: 30px 0 0 0;
     right: auto;
     left: -3.5px;
@@ -256,33 +259,35 @@
 .main-timeline .timeline:nth-child(2n).timeline-content:before,
 .main-timeline .timeline:nth-child(2n).timeline-content:after,
 .main-timeline .timeline:nth-child(2n).icon {
-    background: #4bd9bf; /* teal color */
+    background: #F09248; /* orange color */
 }
 
 .main-timeline .timeline:nth-child(2n) .icon {
-    box-shadow: 0 0 0 2px #e84c47; /* reddish color */
+    box-shadow: 0 0 0 2px #Be5142; /* reddish color */
 }
 
 .main-timeline .timeline:nth-child(3n) .timeline-content,
 .main-timeline .timeline:nth-child(3n) .timeline-content:before,
 .main-timeline .timeline:nth-child(3n) .timeline-content:after,
-.main-timeline .timeline:nth-child(3n) .icon {
-    background: #ff9e09; /* orange color */
+ {
+    background: #BE5142; /* orange color */
 }
 
 .main-timeline .timeline:nth-child(3n) .icon {
-    box-shadow: 0 0 0 2px #ff9e09; /* orange color */
+    background: #F09248;
+    box-shadow: 0 0 0 2px #BE5142; /* orange color */
 }
 
 .main-timeline .timeline:nth-child(4n) .timeline-content,
 .main-timeline .timeline:nth-child(4n) .timeline-content:before,
 .main-timeline .timeline:nth-child(4n) .timeline-content:after,
-.main-timeline .timeline:nth-child(4n) .icon {
-    background: #3ebae7; /* sky blue color */
+ {
+    background: #BE5142; /* sky blue color */
 }
 
 .main-timeline .timeline:nth-child(4n) .icon {
-    box-shadow: 0 0 0 2px #3ebae7; /* sky blue color */
+    background: #F09248;
+    box-shadow: 0 0 0 2px #BE5142; /* sky blue color */
 }
 
 
