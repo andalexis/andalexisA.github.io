@@ -5,3 +5,65 @@
     padding-right: 10%;
     padding-left: 10%;
 }
+
+/*copy and pasted from github*/
+#menuBG {
+    width: 800px;
+    height: 870px;
+    margin: 5px 200px;
+    padding-left: 50px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#frmMenu {
+    width: 800px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: left;
+}
+
+.column {
+    width: 200px;
+    height: 200px;
+    float: left;
+    border: 1px solid black;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#itemPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    float: center;
+    margin: 0px;
+    width: 800px;
+    height: 300px;
+}
+
+.row {
+    border: none;
+    display: inline-block;
+}
+
+#btnOrder {
+    margin: 10px 10px 10px 100px;
+    width: 100px;
+    height: 40px;
+}
+
+© 2021 GitHub, Inc.
